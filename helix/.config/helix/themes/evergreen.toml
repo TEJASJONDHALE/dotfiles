@@ -1,0 +1,131 @@
+# Syntax highlighting
+# -------------------
+"type" = "#7FA86B"  # Forest green
+
+"constructor" = "#A8C49F"  # Sage green
+
+"constant" = "#D9B166"  # Golden brown like forest floor
+"constant.builtin" = "#D9B166"
+"constant.character" = "#8B4513"  # Dark bark brown
+"constant.character.escape" = "#BE9B7B"  # Light bark
+
+"string" = "#4A7C59"  # Deep pine needle green
+"string.regexp" = "#D9B166"
+"string.special" = "#567C73"  # Blue-green like forest shadows
+
+"comment" = { fg = "#6B8E8E", modifiers = ["italic"] }  # Misty gray-green
+
+"variable" = "#D8E4DC"  # Pale forest mist
+"variable.parameter" = { fg = "#D9B166", modifiers = ["italic"] }
+"variable.builtin" = "#8F9779"  # Lichen green
+"variable.other.member" = "#8B4513"  # Dark bark brown
+
+"label" = "#A8C49F"  # Sage green
+
+"punctuation" = "#93A1A1"  # Stone gray
+"punctuation.special" = "#6B8E8E"  # Misty gray-green
+
+"keyword" = { fg = "#3B5E48", modifiers = [""] }  # Deep forest green
+"keyword.storage.modifier.ref" = "#3B5E48"
+"keyword.control.conditional" = { fg = "#6B886B", modifiers = ["italic"] }  # Moss green
+
+"operator" = "#6B8E8E"  # Misty gray-green
+
+"function" = "#567C73"  # Blue-green forest shadow
+"function.macro" = "#6B886B"  # Moss green
+
+"tag" = "#6B886B"  # Moss green
+"attribute" = "#567C73"  # Blue-green forest shadow
+
+"namespace" = { fg = "#567C73", modifiers = ["italic"] }  # Blue-green forest shadow
+
+"special" = "#567C73"  # Blue-green forest shadow
+
+"markup.heading.marker" = { fg = "#D9B166", modifiers = ["bold"] }
+"markup.heading.1" = "#A8C49F"  # Sage green
+"markup.heading.2" = "#6B886B"  # Moss green
+"markup.heading.3" = "#4A7C59"  # Deep pine needle green
+"markup.heading.4" = "#D9B166"  # Golden brown
+"markup.heading.5" = "#8F9779"  # Lichen green
+"markup.heading.6" = "#3B5E48"  # Deep forest green
+"markup.list" = "#6B886B"  # Moss green
+"markup.bold" = { modifiers = ["bold"] }
+"markup.italic" = { modifiers = ["italic"] }
+"markup.strikethrough" = { modifiers = ["crossed_out"] }
+"markup.link.url" = { fg = "#BE9B7B", modifiers = ["underlined"] }  # Light bark
+"markup.link.text" = "#567C73"  # Blue-green forest shadow
+"markup.raw" = "#8B4513"  # Dark bark brown
+
+"diff.plus" = "#4A7C59"  # Deep pine needle green
+"diff.minus" = "#8B4513"  # Dark bark brown
+"diff.delta" = "#567C73"  # Blue-green forest shadow
+
+# User Interface
+# --------------
+"ui.background" = { fg = "#D8E4DC", bg = "#1A2521" }  # Pale mist on deep forest background
+
+"ui.linenr" = { fg = "#2F3D35" }  # Dark forest green
+"ui.linenr.selected" = { fg = "#A8C49F" }  # Sage green
+
+"ui.statusline" = { fg = "#93A1A1", bg = "#1A2521" }  # Stone gray on forest background
+"ui.statusline.inactive" = { fg = "#2F3D35", bg = "#1A2521" }
+"ui.statusline.normal" = { fg = "#1A2521", bg = "#6B8E8E", modifiers = ["bold"] }
+"ui.statusline.insert" = { fg = "#1A2521", bg = "#4A7C59", modifiers = ["bold"] }
+"ui.statusline.select" = { fg = "#1A2521", bg = "#6B886B", modifiers = ["bold"] }
+
+"ui.popup" = { fg = "#D8E4DC", bg = "#1A2521" }
+"ui.window" = { fg = "#0F1613" }  # Deep forest shadow
+"ui.help" = { fg = "#D8E4DC", bg = "#1A2521" }
+
+"ui.bufferline" = { fg = "#93A1A1", bg = "#1A2521" }
+"ui.bufferline.active" = { fg = "#6B886B", bg = "#1A2521", underline = { color = "#6B886B", style = "line" } }
+"ui.bufferline.background" = { bg = "#1A2521" }
+
+"ui.text" = "#D8E4DC"  # Pale forest mist
+"ui.text.focus" = { fg = "#D8E4DC", bg = "#2F3D35", modifiers = ["bold"] }
+"ui.text.inactive" = { fg = "#6B8E8E" }
+
+"ui.virtual" = "#566963"  # Muted forest green
+"ui.virtual.ruler" = { bg = "#2F3D35" }
+"ui.virtual.indent-guide" = "#2F3D35"
+"ui.virtual.inlay-hint" = { fg = "#2F3D35", bg = "#0F1613" }
+
+"ui.selection" = { bg = "#2F3D35" }
+
+"ui.cursor" = { fg = "#1A2521", bg = "#A8C49F", modifiers = ["bold"] }
+"ui.cursor.primary" = { fg = "#1A2521", bg = "#BE9B7B" }
+"ui.cursor.match" = { fg = "#D9B166", modifiers = ["bold"] }
+
+"ui.cursor.primary.normal" = { fg = "#1A2521", bg = "#A8C49F" }
+"ui.cursor.primary.insert" = { fg = "#1A2521", bg = "#4A7C59" }
+"ui.cursor.primary.select" = { fg = "#1A2521", bg = "#8B4513" }
+
+"diagnostic.error" = { underline = { color = "#8B4513", style = "curl" } }
+"diagnostic.warning" = { underline = { color = "#D9B166", style = "curl" } }
+"diagnostic.info" = { underline = { color = "#6B8E8E", style = "curl" } }
+"diagnostic.hint" = { underline = { color = "#3B5E48", style = "curl" } }
+
+error = "#8B4513"  # Dark bark brown
+warning = "#D9B166"  # Golden brown
+info = "#6B8E8E"  # Misty gray-green
+hint = "#3B5E48"  # Deep forest green
+
+[palette]
+# Evergreen forest palette colors
+forest_mist = "#D8E4DC"    # Pale gray-green like morning mist
+sage = "#A8C49F"           # Light sage green
+pine = "#4A7C59"           # Deep pine needle green
+moss = "#6B886B"           # Rich moss green
+bark = "#8B4513"           # Dark tree bark brown
+light_bark = "#BE9B7B"     # Light bark brown
+golden = "#D9B166"         # Golden forest floor
+shadow = "#567C73"         # Blue-green forest shadow
+stone = "#93A1A1"          # Stone gray
+misty = "#6B8E8E"         # Misty gray-green
+lichen = "#8F9779"         # Lichen green
+deep_forest = "#3B5E48"    # Deep forest green
+
+# Background colors
+bg_base = "#1A2521"        # Deep forest background
+bg_darker = "#0F1613"      # Deeper forest shadow
+bg_surface = "#2F3D35"     # Slightly lighter forest background

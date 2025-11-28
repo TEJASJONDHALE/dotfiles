@@ -1,0 +1,28 @@
+# [terminal]
+# # The VT to run the greeter on. Can be "next", "current" or a number
+# # designating the VT.
+# vt = 1
+
+# # The default session, also known as the greeter.
+# [default_session]
+
+# # `agreety` is the bundled agetty/login-lookalike. You can replace `/bin/sh`
+# # with whatever you want started, such as `sway`.
+# command = "agreety --cmd /bin/sh"
+
+# # The user to run the command as. The privileges this user must have depends
+# # on the greeter. A graphical greeter may for example require the user to be
+# # in the `video` group.
+# user = "greeter"
+
+
+[terminal]
+# Run on TTY1 so it looks like a boot screen
+vt = 1
+
+[default_session]
+# The massive command to style Tuigreet
+command = "tuigreet --time --asterisks --remember --remember-session --cmd Hyprland --greeting 'Welcome home, TJ.' --theme 'border=#d4a574;text=#b8a084;prompt=#d4a574;time=#666666;action=#b8a084;button=#d4a574;container=#1a1611;input=#d4a574'"
+
+# The user to run the greeter
+user = "greeter"
